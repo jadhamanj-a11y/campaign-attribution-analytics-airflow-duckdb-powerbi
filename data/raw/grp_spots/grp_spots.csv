@@ -1,0 +1,5 @@
+spot_id,campaign_id,channel_id,spot_date,spot_time,grp_value,spot_duration_sec
+S001,CAMP001,TV01,2026-04-20,20:30:00,4.5,30
+S002,CAMP001,TV01,2026-04-20,21:00:00,5.2,30
+S003,CAMP002,TV02,2026-04-21,19:45:00,3.8,20
+S004,CAMP003,DIGI01,2026-04-21,22:10:00,2.5,15

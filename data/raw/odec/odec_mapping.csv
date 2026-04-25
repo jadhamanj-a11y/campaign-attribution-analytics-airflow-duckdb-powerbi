@@ -1,0 +1,4 @@
+channel_id,odec_channel_code,channel_name,channel_type
+TV01,ODEC_TV_001,Star Plus,TV
+TV02,ODEC_TV_002,Zee TV,TV
+DIGI01,ODEC_DIGI_001,YouTube,Digital

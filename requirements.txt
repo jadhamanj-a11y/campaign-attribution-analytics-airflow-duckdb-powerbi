@@ -1,0 +1,7 @@
+pandas
+openpyxl
+duckdb
+python-dotenv
+pyyaml
+scikit-learn
+joblib

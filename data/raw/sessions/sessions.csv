@@ -1,0 +1,10 @@
+session_id,user_id,session_timestamp,device_type,session_source
+SESS001,U001,2026-04-20 20:34:10,mobile,direct
+SESS002,U002,2026-04-20 20:39:45,desktop,organic
+SESS003,U003,2026-04-20 20:12:00,mobile,direct
+SESS004,U004,2026-04-20 21:05:30,mobile,paid
+SESS005,U005,2026-04-20 21:20:00,desktop,organic
+SESS006,U006,2026-04-21 19:51:00,mobile,direct
+SESS007,U007,2026-04-21 19:30:00,desktop,organic
+SESS008,U008,2026-04-21 22:18:00,mobile,paid
+SESS009,U009,2026-04-21 22:00:00,mobile,direct
