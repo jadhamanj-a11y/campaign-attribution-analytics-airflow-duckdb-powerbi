@@ -1,0 +1,38 @@
+check_name,status,details,checked_at
+File not empty: grp_spots/grp_spots.csv,PASSED,File exists and size=261 bytes,2026-04-25 12:14:26
+File not empty: sessions/sessions.csv,PASSED,File exists and size=961 bytes,2026-04-25 12:14:26
+File not empty: campaign_master/campaign_master.csv,PASSED,File exists and size=247 bytes,2026-04-25 12:14:26
+File not empty: odec/odec_mapping.csv,PASSED,File exists and size=149 bytes,2026-04-25 12:14:26
+Raw row count: grp_spots/grp_spots.csv,PASSED,Actual rows=4,2026-04-25 12:14:26
+Raw row count: sessions/sessions.csv,PASSED,Actual rows=19,2026-04-25 12:14:26
+Raw row count: campaign_master/campaign_master.csv,PASSED,Actual rows=3,2026-04-25 12:14:26
+Raw row count: odec/odec_mapping.csv,PASSED,Actual rows=3,2026-04-25 12:14:26
+DuckDB database exists,PASSED,DuckDB file found: /home/jadha/projects/campaign-attribution-analytics-airflow-duckdb-powerbi/duckdb/campaign_analytics.duckdb,2026-04-25 12:14:26
+DuckDB table exists: raw.campaign_master,PASSED,Rows=3,2026-04-25 12:14:26
+DuckDB table exists: raw.grp_spots,PASSED,Rows=4,2026-04-25 12:14:26
+DuckDB table exists: raw.odec_mapping,PASSED,Rows=3,2026-04-25 12:14:26
+DuckDB table exists: raw.sessions,PASSED,Rows=19,2026-04-25 12:14:26
+DuckDB table exists: staging.stg_campaign_master,PASSED,Rows=3,2026-04-25 12:14:26
+DuckDB table exists: staging.stg_grp_spots,PASSED,Rows=4,2026-04-25 12:14:26
+DuckDB table exists: staging.stg_odec_mapping,PASSED,Rows=3,2026-04-25 12:14:26
+DuckDB table exists: staging.stg_sessions,PASSED,Rows=19,2026-04-25 12:14:26
+DuckDB table exists: intermediate.int_session_campaign_candidates,PASSED,Rows=12,2026-04-25 12:14:26
+DuckDB table exists: intermediate.int_attributed_sessions,PASSED,Rows=12,2026-04-25 12:14:26
+DuckDB table exists: intermediate.int_pre_post_spot_sessions,PASSED,Rows=4,2026-04-25 12:14:26
+DuckDB table exists: marts.fact_campaign_sessions,PASSED,Rows=12,2026-04-25 12:14:26
+DuckDB table exists: marts.mart_campaign_effectiveness,PASSED,Rows=4,2026-04-25 12:14:26
+DuckDB table exists: marts.odec_ready_campaign_dataset,PASSED,Rows=12,2026-04-25 12:14:26
+DuckDB table exists: marts.ml_campaign_response_scores,FAILED,Table missing,2026-04-25 12:14:26
+DuckDB table exists: metadata.dq_results,FAILED,Table missing,2026-04-25 12:14:26
+DuckDB table exists: metadata.ingestion_log,FAILED,Table missing,2026-04-25 12:14:26
+Null check: raw.campaign_master.campaign_id,PASSED,No null primary keys,2026-04-25 12:14:26
+Duplicate check: raw.campaign_master.campaign_id,PASSED,No duplicate primary keys,2026-04-25 12:14:26
+Null check: raw.grp_spots.spot_id,PASSED,No null primary keys,2026-04-25 12:14:26
+Duplicate check: raw.grp_spots.spot_id,PASSED,No duplicate primary keys,2026-04-25 12:14:26
+Null check: raw.sessions.session_id,PASSED,No null primary keys,2026-04-25 12:14:26
+Duplicate check: raw.sessions.session_id,PASSED,No duplicate primary keys,2026-04-25 12:14:26
+Null check: raw.odec_mapping.channel_id,PASSED,No null primary keys,2026-04-25 12:14:26
+Duplicate check: raw.odec_mapping.channel_id,PASSED,No duplicate primary keys,2026-04-25 12:14:26
+Attribution table exists,WARNING,"No standard attribution table found. Available tables=['ingestion_log', 'dq_results', 'int_attributed_sessions', 'int_pre_post_spot_sessions', 'int_session_campaign_candidates', 'fact_campaign_sessions', 'mart_campaign_effectiveness', 'odec_ready_campaign_dataset', 'ml_campaign_response_scores', 'campaign_master', 'grp_spots', 'odec_mapping', 'sessions', 'stg_campaign_master', 'stg_grp_spots', 'stg_odec_mapping', 'stg_sessions']",2026-04-25 12:14:26
+Incremental lift table exists,WARNING,"No standard incremental lift table found. Available tables=['ingestion_log', 'dq_results', 'int_attributed_sessions', 'int_pre_post_spot_sessions', 'int_session_campaign_candidates', 'fact_campaign_sessions', 'mart_campaign_effectiveness', 'odec_ready_campaign_dataset', 'ml_campaign_response_scores', 'campaign_master', 'grp_spots', 'odec_mapping', 'sessions', 'stg_campaign_master', 'stg_grp_spots', 'stg_odec_mapping', 'stg_sessions']",2026-04-25 12:14:26
+ML scoring table exists,WARNING,"No standard ML scoring table found. Available tables=['ingestion_log', 'dq_results', 'int_attributed_sessions', 'int_pre_post_spot_sessions', 'int_session_campaign_candidates', 'fact_campaign_sessions', 'mart_campaign_effectiveness', 'odec_ready_campaign_dataset', 'ml_campaign_response_scores', 'campaign_master', 'grp_spots', 'odec_mapping', 'sessions', 'stg_campaign_master', 'stg_grp_spots', 'stg_odec_mapping', 'stg_sessions']",2026-04-25 12:14:26
