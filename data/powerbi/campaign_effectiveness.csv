@@ -1,0 +1,5 @@
+spot_id,campaign_id,campaign_name,brand,channel_id,channel_name,channel_type,spot_ts,pre_spot_sessions,post_spot_sessions,incremental_lift_pct,attributed_sessions,budget
+S004,CAMP003,Digital Booster,BrandC,DIGI01,YouTube,Digital,2026-04-21 22:10:00,2,5,150.0,5,200000.0
+S002,CAMP001,Festival Mega Sale,BrandA,TV01,Star Plus,TV,2026-04-20 21:00:00,1,2,100.0,2,500000.0
+S001,CAMP001,Festival Mega Sale,BrandA,TV01,Star Plus,TV,2026-04-20 20:30:00,2,4,100.0,4,500000.0
+S003,CAMP002,Prime Time Awareness,BrandB,TV02,Zee TV,TV,2026-04-21 19:45:00,2,1,-50.0,1,350000.0
