@@ -137,15 +137,15 @@ SELECT
     p.pre_spot_sessions,
     p.post_spot_sessions,
     CASE
-        WHEN p.pre_spot_sessions = 0 THEN NULL
-        ELSE ROUND(
-            ((p.post_spot_sessions - p.pre_spot_sessions) * 100.0)
-            / p.pre_spot_sessions,
-            2
-        )
-    END AS incremental_lift_pct,
-    COALESCE(attr.attributed_sessions, 0) AS attributed_sessions,
-    cm.budget
+    WHEN p.pre_spot_sessions = 0 AND p.post_spot_sessions > 0 THEN 100.00
+    WHEN p.pre_spot_sessions = 0 AND p.post_spot_sessions = 0 THEN 0.00
+    ELSE ROUND(
+        ((p.post_spot_sessions - p.pre_spot_sessions) * 100.0)
+        / p.pre_spot_sessions,
+        2
+    )
+END AS incremental_lift_pct,
+    COALESCE(attr.attributed_sessions, 0) AS attributed_sessions,    cm.budget
 FROM intermediate.int_pre_post_spot_sessions p
 LEFT JOIN (
     SELECT
