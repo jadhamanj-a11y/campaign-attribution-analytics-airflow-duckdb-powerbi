@@ -1,0 +1,5 @@
+spot_id,campaign_id,channel_id,spot_ts,pre_spot_sessions,post_spot_sessions,incremental_lift_pct,attributed_sessions,budget,anomaly_score,is_abnormal_response,response_segment
+S004,CAMP003,DIGI01,2026-04-21 22:10:00,2.0,5.0,150.0,5,200000.0,-0.009313286697085421,1,Abnormal Positive Spike
+S002,CAMP001,TV01,2026-04-20 21:00:00,1.0,2.0,100.0,2,500000.0,0.02028896694628124,0,High Positive Lift
+S001,CAMP001,TV01,2026-04-20 20:30:00,2.0,4.0,100.0,4,500000.0,0.09297265283753103,0,High Positive Lift
+S003,CAMP002,TV02,2026-04-21 19:45:00,2.0,1.0,-50.0,1,350000.0,0.0031044288990285107,0,Weak Response
